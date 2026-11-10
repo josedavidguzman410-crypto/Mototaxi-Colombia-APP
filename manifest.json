@@ -1,0 +1,11 @@
+{
+  "name": "Mototaxi Colombia",
+  "short_name": "Mototaxi",
+  "description": "Solicita servicios de mototaxi y entregas en Montería, Córdoba.",
+  "start_url": "/Mototaxi-Colombia-APP/",
+  "scope": "/Mototaxi-Colombia-APP/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#198754",
+  "lang": "es-CO"
+}
