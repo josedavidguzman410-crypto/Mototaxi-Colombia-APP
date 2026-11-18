@@ -58,9 +58,13 @@
       🏍️ Viajar en moto
     </button>
 
-    <button onclick="elegirCarro()">
-      🚘 Viajar en carro
-    </button>
+    <button onclick="solicitar('Viaje en carro público')">
+  🚘 Carro público
+</button>
+
+<button onclick="solicitar('Viaje en carro particular')">
+  🚗 Carro particular
+</button>
 
     <button onclick="solicitar('Domicilio')">
       📦 Enviar un domicilio
@@ -89,19 +93,7 @@
       );
     }
 
-    function elegirCarro() {
-      const tipo = prompt(
-        "Escribe 1 para carro de servicio público o 2 para carro particular:"
-      );
-
-      if (tipo === "1") {
-        solicitar("Viaje en carro de servicio público");
-      } else if (tipo === "2") {
-        solicitar("Viaje en carro particular");
-      } else if (tipo !== null) {
-        alert("Elige 1 o 2, por favor.");
-      }
-    }
+    
   </script>
 </body>
 </html>
