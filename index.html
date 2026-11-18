@@ -47,6 +47,62 @@
   <p><strong>Método de pago:</strong></p>
 <p>💵 Efectivo — disponible</p>
 <p>💳 Pago digital (PSE) — próximamente</p></main>
+<body>
+  <main>
+    <h1>🏍️ Mototaxi Colombia</h1>
+    <p>Muévete y envía tus productos en Montería.</p>
+
+    <h2>¿Qué servicio necesitas?</h2>
+
+    <button onclick="solicitar('Viaje en moto')">
+      🏍️ Viajar en moto
+    </button>
+
+    <button onclick="elegirCarro()">
+      🚘 Viajar en carro
+    </button>
+
+    <button onclick="solicitar('Domicilio')">
+      📦 Enviar un domicilio
+    </button>
+
+    <h2>Seguridad</h2>
+    <button onclick="window.location.href='tel:123'">
+      🆘 Emergencia: llamar al 123
+    </button>
+
+    <p><strong>Tarifas:</strong> Moto y carro tendrán tarifas diferentes; se confirmarán antes del servicio.</p>
+    <p><strong>Calidad:</strong> vehículos limpios y en buenas condiciones. Al finalizar podrás calificar el trato y la presentación.</p>
+
+    <p><strong>Pago:</strong></p>
+    <p>💵 Efectivo: disponible</p>
+    <p>💳 Pago digital (PSE): próximamente</p>
+  </main>
+
+  <script>
+    const telefono = "573134897125";
+
+    function solicitar(servicio) {
+      const mensaje = `Hola, quiero solicitar: ${servicio}`;
+      window.open(
+        `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`
+      );
+    }
+
+    function elegirCarro() {
+      const tipo = prompt(
+        "Escribe 1 para carro de servicio público o 2 para carro particular:"
+      );
+
+      if (tipo === "1") {
+        solicitar("Viaje en carro de servicio público");
+      } else if (tipo === "2") {
+        solicitar("Viaje en carro particular");
+      } else if (tipo !== null) {
+        alert("Elige 1 o 2, por favor.");
+      }
+    }
+  </script>
 </body>
 </html>
 
